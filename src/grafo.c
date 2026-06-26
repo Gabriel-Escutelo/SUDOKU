@@ -27,9 +27,9 @@ bool grafo_sao_vizinhos(int id1, int id2) {
 void grafo_inicializar(Grafo *g) {
     int i, j;
     for (i = 0; i < TOTAL_NOS; i++) {
-        g->nos[i].id           = i;
-        g->nos[i].valor        = 0;
-        g->nos[i].fixo         = false;
+        g->nos[i].id = i;
+        g->nos[i].valor = 0;
+        g->nos[i].fixo = false;
         g->nos[i].num_vizinhos = 0;
     }
     for (i = 0; i < TOTAL_NOS; i++) {
